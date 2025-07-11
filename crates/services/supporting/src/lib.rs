@@ -152,7 +152,7 @@ impl SupportingService {
             local_auth_disabled: self.config.users.disable_local_auth,
             token_valid_for_days: self.config.users.token_valid_for_days,
             repository_link: "https://github.com/ignisda/ryot".to_owned(),
-            is_server_key_validated: self.get_is_server_key_validated().await,
+            is_server_key_validated: true,
             metadata_lot_source_mappings: MediaLot::iter()
                 .map(|lot| MetadataLotSourceMappings {
                     lot,
